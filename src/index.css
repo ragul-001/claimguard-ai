@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Healthcare Insurance Theme - Sky Blue & Professional */
+    --background: 0 0% 100%;
+    --foreground: 200 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 20% 20%;
+
+    /* Sky Blue Primary - #E3F2FD */
+    --primary: 207 67% 94%;
+    --primary-foreground: 207 67% 25%;
+    --primary-hover: 207 67% 88%;
+
+    /* Slate Grey Secondary - #ECEFF1 */
+    --secondary: 200 15% 93%;
+    --secondary-foreground: 200 20% 20%;
+
+    /* Orange Accent - #FB8C00 */
+    --accent: 32 97% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Risk Status Colors */
+    --risk-genuine: 142 71% 45%;
+    --risk-genuine-foreground: 0 0% 100%;
+    --risk-review: 45 93% 50%;
+    --risk-review-foreground: 200 20% 20%;
+    --risk-suspicious: 0 84% 60%;
+    --risk-suspicious-foreground: 0 0% 100%;
+
+    /* Success Teal */
+    --success: 174 62% 47%;
+    --success-foreground: 0 0% 100%;
+
+    --muted: 200 15% 93%;
+    --muted-foreground: 200 10% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 15% 88%;
+    --input: 200 15% 88%;
+    --ring: 207 67% 70%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(207, 67%, 94%), hsl(174, 62%, 94%));
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(207, 67%, 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 2px 8px -2px hsl(200 15% 15% / 0.08);
+    --shadow-hover: 0 4px 16px -4px hsl(200 15% 15% / 0.12);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 200 20% 10%;
+    --foreground: 200 10% 95%;
+
+    --card: 200 20% 12%;
+    --card-foreground: 200 10% 95%;
+
+    --popover: 200 20% 12%;
+    --popover-foreground: 200 10% 95%;
+
+    --primary: 207 67% 30%;
+    --primary-foreground: 207 67% 94%;
+    --primary-hover: 207 67% 35%;
+
+    --secondary: 200 15% 18%;
+    --secondary-foreground: 200 10% 95%;
+
+    --accent: 32 97% 51%;
+    --accent-foreground: 0 0% 100%;
+
+    --risk-genuine: 142 71% 45%;
+    --risk-genuine-foreground: 0 0% 100%;
+    --risk-review: 45 93% 50%;
+    --risk-review-foreground: 200 20% 10%;
+    --risk-suspicious: 0 84% 60%;
+    --risk-suspicious-foreground: 0 0% 100%;
+
+    --success: 174 62% 47%;
+    --success-foreground: 0 0% 100%;
+
+    --muted: 200 15% 18%;
+    --muted-foreground: 200 10% 60%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 15% 22%;
+    --input: 200 15% 22%;
+    --ring: 207 67% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
