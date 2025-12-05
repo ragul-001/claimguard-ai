@@ -75,5 +75,8 @@ const PolicyHolderLayout = () => {
   );
 };
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 92b23e9d69d2e7bde4d978ac57aac4e399776b02
 export default PolicyHolderLayout;
